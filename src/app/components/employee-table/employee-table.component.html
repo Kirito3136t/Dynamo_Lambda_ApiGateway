@@ -1,0 +1,26 @@
+<table>
+    <thead>
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Email</th>
+        <th>Job Title</th>
+        <th>Salary</th>
+        <th>operations</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.employeeid}}</td>
+        <td>{{employee.full_name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{getJobTitleName(employee.job_title)}}</td>
+        <td>{{employee.Salary}}</td>
+        <td class="button-list">
+            <button mat-stroked-button color="primary" (click)="editEmployee(employee?.employeeid)">Edit</button>
+            <button mat-stroked-button color="primary" (click)="deleteEmployee(employee?.employeeid)">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,37 @@
+{
+    "/employees": {
+    "target": "https://czq8apsskc.execute-api.eu-north-1.amazonaws.com/production",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/proxy" : ""}
+    },
+    "/employee": {
+    "target": "https://czq8apsskc.execute-api.eu-north-1.amazonaws.com/production",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/proxy" : ""}
+    },
+    "/status": {
+    "target": "https://czq8apsskc.execute-api.eu-north-1.amazonaws.com/production",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/proxy" : ""}
+    },
+    "/job_titles": {
+    "target": "https://czq8apsskc.execute-api.eu-north-1.amazonaws.com/production",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/proxy" : ""}
+    },
+    "/download": {
+    "target": "https://czq8apsskc.execute-api.eu-north-1.amazonaws.com/production",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/proxy" : ""}
+    }
+  }

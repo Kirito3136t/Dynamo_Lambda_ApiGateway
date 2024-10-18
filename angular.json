@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -63,7 +64,8 @@
               "browserTarget": "EmployeeData:build:production"
             },
             "development": {
-              "browserTarget": "EmployeeData:build:development"
+              "browserTarget": "EmployeeData:build:development",
+              "proxyConfig":"src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -87,6 +89,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "07ea4c04-f697-4f72-bebf-d939f4d24385"
   }
 }
